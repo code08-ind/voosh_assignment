@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* head page */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section.head{
+  background:url('./imgs/head.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-height: 1000px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+section.head div.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.head div.container div.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+section.head div.container div.row div.col-md-6{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.head div.container div.row div.col-md-6 button{
+  margin-left: -1200px;
+  margin-top: 140px;
+  padding: 17px 15px;
+  outline:none;
+  border: 0;
+  border-radius: 4px;
+  background-color:#2d66f5;
+  color:white;
+  font-weight: 600;
+}
+
+/* login page */  
+
+section.login{
+  background:url('./imgs/back.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.login div.container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.login div.container div.row{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+section.login div.container div.row div.col-md-6{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.login div.container div.row div.col-md-6 h1{
+  color:white;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3em;
+}
+
+section.login div.container div.row div.col-md-6 div.form-container{
+  width:70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  margin-right: 100px;
+}
+
+section.login div.container div.row div.col-md-6 div.form-container form{
+  width:90%;
+}
+
+section.login div.container div.row div.col-md-6 div.form-container form input{
+  width:100%;
+  outline: none;
+  border-radius: 4px;
+  padding: 15px 15px;
+  background-color: #EFF0F3;
+  border: 0;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+section.login div.container div.row div.col-md-6 div.form-container form button{
+  background-color: #2D66F5;
+  border-radius: 4px;
+  width:100%;
+  outline: none;
   color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 15px;
+  font-size: 1em;
+  border: 0;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
